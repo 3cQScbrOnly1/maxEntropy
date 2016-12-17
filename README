@@ -1,0 +1,16 @@
+mshadow 库负责本程序所有的矩阵运算。
+LibN3L 库只使用了F<xxx> 函数。
+
+关于以上两个库如何链入程序，在Makefile中已经写明
+
+Instance 类负责存储一个句子的两个信息。一个是句子的分类结果，另一个是句子分词后的结果。
+InstanceReader 类负责加载训练集和测试集。
+FeatureExtractor 类负责句子抽取特征。
+MyAlphabet 类负责生成和存储标签表和特征表。
+InstanceToExampleTransformer 负责将Instance中的句子信息按照特征表和标签表转化成数字形式存入Example
+SparseLayer 类是一层函数 y'=Wx 
+
+Classifier 类是一个分类器 这个程序里面只有一层函数
+
+Counter 类统计预测正确率
+main.cpp 中写有主函数入口
